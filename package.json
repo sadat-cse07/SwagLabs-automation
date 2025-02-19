@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "cypress": "^14.0.3",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^5.0.0",
+    "mochawesome-report-generator": "^6.2.0"
+  },
+  "dependencies": {
+    "@percy/cypress": "github:percy/percy-cypress"
+  },
+
+  "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
+    "cypress:merge": "mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mocha/report.json",
+    "cypress:report": "marge cypress/reports/mocha/report.json -f report -o cypress/reports/mocha",
+    "cypress:report:open": "open cypress/reports/mocha/report.html",
+    "cypress:ci": "npm run cypress:run && npm run cypress:merge && npm run cypress:report",
+    "addToCartPage:run": "cypress run --spec cypress/e2e/testCase/addToCartPage.cy.js"
+  }
+}

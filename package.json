@@ -7,9 +7,9 @@
     "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
-    "@percy/cypress": "github:percy/percy-cypress"
+    "@percy/cypress": "github:percy/percy-cypress",
+    "puppeteer": "^24.2.1"
   },
-
   "scripts": {
     "cypress:run": "cypress run",
     "cypress:open": "cypress open",

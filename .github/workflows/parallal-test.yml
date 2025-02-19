@@ -12,6 +12,12 @@ jobs:
         uses: cypress-io/github-action@v6
         with:
           command: npm run addToCartPage:run
+
+      - name: Test Report-Add To Card Page
+        uses: actions/upload-artifact@v4
+        with:
+            name: Mochaawsome HTML Report
+            path: cypress/reports    
     
   loginPage-run:
     runs-on: ubuntu-24.04
@@ -25,5 +31,9 @@ jobs:
         with:
           command: npm run loginPage:run
     
-    
+      - name: Test Report-Login Page
+        uses: actions/upload-artifact@v4
+        with:
+          name: Mochaawsome HTML Report
+          path: cypress/reports 
 

@@ -17,6 +17,8 @@
     "cypress:report": "marge cypress/reports/mocha/report.json -f report -o cypress/reports/mocha",
     "cypress:report:open": "open cypress/reports/mocha/report.html",
     "cypress:ci": "npm run cypress:run && npm run cypress:merge && npm run cypress:report",
-    "addToCartPage:run": "cypress run --spec cypress/e2e/testCase/addToCartPage.cy.js"
+    "addToCartPage:run": "cypress run --spec cypress/e2e/testCase/addToCartPage.cy.js",
+    "loginPage:run": "cypress run --spec cypress/e2e/testCase/loginPage.cy.js"
   }
+  
 }

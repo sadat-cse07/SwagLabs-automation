@@ -68,9 +68,7 @@ This project is an automated testing framework for the **Swag Lab** e-commerce w
 - Test results are sent as Slack alerts. (continueing) 
 - Supports parallel execution for efficient test runs.  
 
-## 📢 Contributing  
-Feel free to contribute by submitting issues or pull requests.  
+![image](https://github.com/user-attachments/assets/6939e10d-8751-4a18-ab14-b1939ecd7b7a)
+![image](https://github.com/user-attachments/assets/be772987-bb2c-4665-9c3f-04533fcaadb1)
 
-## 📜 License  
-This project is licensed under [MIT License](LICENSE).
 
